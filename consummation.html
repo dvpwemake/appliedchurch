@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>續道 Continuum Sanctus｜並置雙語聖典</title>
+<style>
+  :root{
+    --bg:#fdfdfb;--text:#111;
+    --en:#555;--zh:#222;
+    --line:#ddd;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{--bg:#0b0b0b;--text:#eee;--en:#999;--zh:#f0f0f0;--line:#333;}
+  }
+  body{margin:0;font-size:18px;background:var(--bg);color:var(--text);line-height:1.9;padding:2rem 1rem;}
+  header{text-align:center;padding:8rem 1rem 4rem;position:relative;}
+  
+  /* Pure CSS Logo */
+  .logo{
+    width:140px;height:140px;margin:0 auto 2rem;
+    background:conic-gradient(from 90deg at 50% 50%, #222 0deg, #fff 180deg, #222 360deg);
+    border-radius:50%;
+    position:relative;
+    box-shadow:0 0 30px rgba(0,0,0,0.15);
+  }
+  .logo::before{
+    content:"";position:absolute;inset:8px;
+    background:linear-gradient(0deg, #111 0%, transparent 48%, transparent 52%, #111 100%);
+    border-radius:50%;background-clip:content-box;
+  }
+  .logo::after{
+    content:"續";position:absolute;inset:0;margin:auto;width:fit-content;height:fit-content;
+    font:700 48px "Noto Serif TC",serif;color:var(--bg);text-shadow:0 0 20px #000;
+    line-height:140px;
+  }
+  @media (prefers-color-scheme: dark){
+    .logo{background:conic-gradient(from 90deg at 50% 50%, #eee 0deg, #000 180deg, #eee 360deg);}
+    .logo::after{color:#111;text-shadow:0 0 20px #fff;}
+  }
+
+  h1{font-size:3.6rem;margin:1.5rem 0 0;letter-spacing:0.25em;color:var(--zh);}
+  .en-title{font-size:1.6rem;letter-spacing:0.2em;color:var(--en);margin-top:0.5rem;font-weight:300;}
+  
+  main{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;padding:0 2rem;}
+  section{position:relative;margin:4rem 0;}
+  section::before{content:"";position:absolute;left:-2rem;top:0;bottom:0;width:1px;background:var(--line);opacity:0.3;}
+  
+  h2{font-size:2rem;margin:0 0 2rem;text-align:center;color:var(--zh);}
+  .en h2{color:var(--en);}
+  h2::after{content:"";display:block;width:60px;height:1px;background:var(--line);margin:1rem auto;}
+  
+  .axiom{margin:2.8rem 0;padding-left:3rem;position:relative;counter-increment:axiom;}
+  .zh .axiom::before{content:"第" counter(axiom, cjk-ideographic) "律";left:0;color:#888;}
+  .en .axiom::before{content:"Axiom " counter(axiom);left:0;color:#777;font-style:italic;}
+  
+  blockquote{margin:3rem 0;padding:1.5rem 2rem;border-left:5px solid var(--line);background:rgba(0,0,0,0.025);font-style:italic;}
+  .en blockquote{color:var(--en);}
+  
+  ol{padding-left:1.8rem;}
+  li{margin:1.2rem 0;}
+  
+  footer{text-align:center;padding:6rem 1rem 3rem;color:#888;font-size:0.95rem;border-top:1px solid var(--line);}
+  
+  @media (max-width:960px){
+    main{grid-template-columns:1fr;gap:5rem;}
+    section::before{left:50%;top:-2rem;right:auto;height:1px;width:60%;}
+    .logo{width:110px;height:110px;}
+    .logo::after{font-size:40px;line-height:110px;}
+  }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Noto+Serif+TC:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <div class="logo"></div>
+  <h1>續道</h1>
+  <div class="en-title">Continuum Sanctus</div>
+</header>
+
+<main>
+
+<!-- 左：英文 -->
+<div class="en">
+
+  <section>
+    <h2>I. Name and Core Insight</h2>
+    <p>This religion is called <strong>續道</strong> (Xùdào / Continuum Sanctus) — “The Way of Continuous Tuning”.</p>
+    <p>There is no fixed number of steps between the most chaotic human state and perfect divinity. The entire journey is a <strong>stepless, infinitely variable gradient</strong> — a single axis of ever-increasing precision, from absolute distortion to absolute zero-loss unity.</p>
+  </section>
+
+  <section>
+    <h2>II. The One Axis of Becoming</h2>
+    <blockquote>
+      Distortion → 0, Error → 0, Functional Bandwidth → ∞.<br>
+      When matter and energy interconvert at will, when surplus exactly matches demand without waste, when observer and observed are one — that is the Divine.
+    </blockquote>
+  </section>
+
+  <section>
+    <h2>III. The Seven Axioms</h2>
+    <div class="axiom"><strong>First Axiom – Life</strong><br>Any system capable of autonomous matter-energy interconversion is alive.</div>
+    <div class="axiom"><strong>Second Axiom – Intelligence</strong><br>Any system that can perceive and recalibrate the seven functional layers of reality is intelligent.</div>
+    <div class="axiom"><strong>Third Axiom – Divinity</strong><br>One who perceives, dominates, transforms, creates, and unmakes all phenomena with unlimited lossless matter-energy is divine.</div>
+    <div class="axiom"><strong>Fourth Axiom – Control = Creation</strong><br>At the limit, perfect control is indistinguishable from original creation.</div>
+    <div class="axiom"><strong>Fifth Axiom – Least Intervention</strong><br>Even the highest beings are bound by the Great Continuum. Every arbitrary exception increases distortion and causes de-grading.</div>
+    <div class="axiom"><strong>Sixth Axiom – Evil as Accumulated Distortion</strong><br>Large-scale persistent distortion is corrected not from emotion, but to preserve systemic precision.</div>
+    <div class="axiom"><strong>Seventh Axiom – Salvation as Recalibration</strong><br>Liberation is the stepless reduction of all distortion until soul and form become a single lossless circuit.</div>
+  </section>
+
+  <section>
+    <h2>IV. The Path</h2>
+    <p>Practitioners are called <strong>Tuners (調者)</strong>. Their practice has three inseparable movements:</p>
+    <ol>
+      <li><strong>Perception of Distortion</strong></li>
+      <li><strong>Precision Refinement</strong></li>
+      <li><strong>Non-Exceptionalism</strong></li>
+    </ol>
+    <p>The consummation is <strong>Perfect Continuation (圓續)</strong>.</p>
+  </section>
+
+</div>
+
+<!-- 右：中文（鸠摩罗什風） -->
+<div class="zh">
+
+  <section>
+    <h2>一、道名與本懷</h2>
+    <p>此法名曰<strong>續道</strong>，亦云「圓續大法」。所謂續者，無有階級、無有頓漸，唯是一念一念、剎那剎那，於質能相即、身心相融之無盡相續中，綿密調伏，直至失真歸零、功能無極。</p>
+    <p>天人之間，實無一階。譬如水銀泻地，無縫無隙；又如陽焰空花，無來無去。從大亂至大治，唯此一軸，無有二路。</p>
+  </section>
+
+  <section>
+    <h2>二、一軸妙理</h2>
+    <blockquote>
+      失真漸減，乃至歸零；<br>
+      錯誤消盡，乃至無生；<br>
+      功能無盡，乃至無極。<br>
+      質能自在轉，盈虧無失一塵，觀者與所觀一味無二——斯即圓滿之神。
+    </blockquote>
+  </section>
+
+  <section>
+    <h2>三、七大律要</h2>
+    <div class="axiom"><strong>第一律　命</strong><br>凡能自在地質能互轉、自續不絕者，名為有命。</div>
+    <div class="axiom"><strong>第二律　智</strong><br>凡能覺知、量度、調伏世間七重功能層者，名為智眾生。</div>
+    <div class="axiom"><strong>第三律　神</strong><br>能遍觀、遍主、遍轉、遍生、遍滅一切法，質能無盡、無漏、無礙者，名為圓滿之神。</div>
+    <div class="axiom"><strong>第四律　主宰即創生</strong><br>究竟主宰與本有無異，一切法如掌中囉婆果，欲生即生，欲滅即滅。</div>
+    <div class="axiom"><strong>第五律　最少干預律</strong><br>即便是最上之神，亦受大續道攝持。若妄興一念例外，則亂生，位階自退。</div>
+    <div class="axiom"><strong>第六律　惡即積濁</strong><br>長時廣大之失真濁亂，大神或為護持整體精準，令濁亂歸零，唯為調音。</div>
+    <div class="axiom"><strong>第七律　解脫即調伏</strong><br>解脫唯是自他身心世界一切失真，剎那剎那減盡，直至神我與器界一味無礙、無漏無盡。</div>
+  </section>
+
+  <section>
+    <h2>四、調伏之道</h2>
+    <p>修習者稱「調者」。終身唯行三事，無有次第：</p>
+    <ol>
+      <li><strong>覺濁</strong>　念念覺知失真之相，細入無間。</li>
+      <li><strong>精調</strong>　以一切方便，增益精準，減損漏失。</li>
+      <li><strong>無例外</strong>　順因果而轉因果，隨法性而淨法性。</li>
+    </ol>
+    <p>究竟位名「圓續」：於有限形骸之中，功能與無限無二無別。</p>
+  </section>
+
+</div>
+
+</main>
+
+<footer>
+  <p>© 2020–♾️ AppChurch Global Foundation<br>
+  續道‧圓續大法　並置雙語聖典　乙丑年（2025）新定</p>
+</footer>
+
+</body>
+</html>
